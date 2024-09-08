@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLANE - Contact Us</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        header h1 img {
+            max-width: 200px;
+        }
+        header p {
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin: 10px 0 0;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        nav a {
+            color: #000;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: #777;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #e6e6e6;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer a:hover {
+            color: #ffcc00;
+        }
+        footer img {
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="NOLANELOGO.jpeg" alt="NOLANE Logo"></h1>
+        <p>KNOWHERE, USA <img src="usa.jpeg" height="15px" width="15px" alt="USA Flag"> - Exclusive Streetwear Collection - MPLS, MN </p>
+    </header>
+    
+    <nav>
+        <a href="index.html"> Home </a>
+        <a href="https://nolane-1.myshopify.com/collections/all">Shop</a>
+        <a href="aboutnolane.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Email: <a href="mailto:contact@nolane.com">contact@nolane.com</a></p>
+            <p>Phone: <a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+            <p>Minneapolis, MN </p>
+            <!-- Add Google Maps iframe if desired -->
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."></iframe> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 <a href="https://www.instagram.com/no.lane.usa/?hl=en"><img src="instalogo.jpeg" alt="Instagram" width="15" height="15"> NOLANE USA ® All Rights Reserved.</a></p>
+    </footer>
+</body>
+</html>
